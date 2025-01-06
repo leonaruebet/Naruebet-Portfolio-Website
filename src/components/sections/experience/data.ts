@@ -1,0 +1,109 @@
+import { IconType } from 'react-icons'
+import { 
+  FaCode,
+  FaChartLine,
+  FaBriefcase,
+  FaRocket,
+  FaLightbulb,
+  FaLeaf
+} from 'react-icons/fa'
+
+export interface Experience {
+  id: string
+  role: string
+  company: string
+  companyDesc: string
+  duration: string
+  icon: IconType
+  color: string
+  logo: string
+  achievements: string[]
+  technologies?: string[]
+}
+
+export const experienceData: Experience[] = [
+  {
+    id: 'station',
+    role: 'Co-Founder & COO',
+    company: 'The Station Group Holding',
+    companyDesc: 'Technology Solution',
+    duration: '05/2024 – Present',
+    icon: FaRocket,
+    color: '#73D25D',
+    logo: '/station.png',
+    achievements: [
+      '**Automated 60%** of routine inquiries, **tripling** response times with AI chatbot',
+      'Increased customer retention by **25%** through data-driven ad targeting',
+      'Reduced content ideation time by **80%** using AI tools for automated updates',
+      'Launched the "**Next Gen Entrepreneur Station x BOTNOI CEO Padawan Program**" to train future CEOs'
+    ],
+    technologies: ['Operations', 'Leadership', 'Strategy', 'Growth Management']
+  },
+  {
+    id: 'baksters',
+    role: 'Business Development & Finance Team Lead',
+    company: 'Baksters',
+    companyDesc: 'AI Solution',
+    duration: '09/2023 – Present',
+    icon: FaBriefcase,
+    color: '#CFE301',
+    logo: '/baksters.png',
+    achievements: [
+      'Led valuation process, securing **30M funding** for 4 AI products, significantly boosting investor confidence',
+      'Drove **150% growth** in engagement with market research and refined strategies',
+      'Enhanced efficiency by **30%** through AI integration and data-driven insights',
+      'Fostered **long-term partnerships** with innovative solutions'
+    ],
+    technologies: ['Financial Planning', 'Business Development', 'Team Leadership', 'Strategic Planning']
+  },
+  {
+    id: 'starters',
+    role: 'Co-Founder & COO',
+    company: 'Starters Official',
+    companyDesc: 'Technology Solution',
+    duration: '01/2024 – Present',
+    icon: FaLightbulb,
+    color: '#00A4EF',
+    logo: '/starters.png',
+    achievements: [
+      'Leading company operations and strategy',
+      'Developing and scaling business initiatives',
+      'Managing team growth and development',
+      'Implementing operational excellence'
+    ],
+    technologies: ['Operations', 'Strategy', 'Leadership', 'Business Development']
+  },
+  {
+    id: 'durian',
+    role: 'Data Scientist',
+    company: 'Durian Corporation',
+    companyDesc: 'Data Consulting',
+    duration: '06/2024 – 10/2024',
+    icon: FaLeaf,
+    color: '#FFD700',
+    logo: '/durian.png',
+    achievements: [
+      'Built **interactive data visualizations** for product development and campaigns',
+      'Extracted insights from **unstructured data** for SEA market analysis',
+      'Created an **AI system** for TikTok, optimizing video content performance'
+    ],
+    technologies: ['Python', 'Machine Learning', 'Data Analysis', 'Statistical Modeling']
+  },
+  {
+    id: 'syntax',
+    role: 'Data Analytics',
+    company: 'Syntax',
+    companyDesc: 'Industrial Services',
+    duration: '12/2023 – 02/2024',
+    icon: FaChartLine,
+    color: '#4285F4',
+    logo: '/syntax.png',
+    achievements: [
+      'Digitized backend systems to improve customer insights with **analytics**',
+      'Built a no-code AI chatbot, increasing response efficiency by **30%**',
+      'Led rebranding efforts, boosting market penetration by **40%**',
+      'Designed strategies to drive community engagement and **15% revenue growth**'
+    ],
+    technologies: ['Data Analysis', 'Business Intelligence', 'Analytics Tools', 'Reporting']
+  }
+] 
