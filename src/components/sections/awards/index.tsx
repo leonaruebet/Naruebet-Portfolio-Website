@@ -248,7 +248,7 @@ export function Awards() {
               <p className="text-xs text-white/60 truncate group-hover:whitespace-normal">
                 {award.description}
                 {award.highlight && (
-                  <span className="text-white/40 ml-1 hidden group-hover:inline">— {award.highlight}</span>
+                  <span className="text-white/40 ml-1 hidden group-hover:inline">&mdash; {award.highlight}</span>
                 )}
               </p>
             </div>
@@ -372,7 +372,7 @@ export function Awards() {
           <div className="pt-12 border-t border-[#73D25D]/20">
             <div className="text-center">
               <h2 className="mb-2 text-2xl font-bold tracking-tighter neon-text">contact.me</h2>
-              <p className="text-sm text-white/80 mb-6">Let's connect and create something amazing together</p>
+              <p className="text-sm text-white/80 mb-6">Let&apos;s connect and create something amazing together</p>
               
               <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                 {socialLinks.map((link) => {

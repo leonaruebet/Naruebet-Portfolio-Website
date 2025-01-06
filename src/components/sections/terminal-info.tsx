@@ -38,7 +38,7 @@ function TerminalContent() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [displayText, setDisplayText] = useState('')
   const [isTyping, setIsTyping] = useState(true)
-  const [showPrompt, setShowPrompt] = useState(true)
+  const [showPrompt] = useState(true)
   const [scrollWidth, setScrollWidth] = useState(0)
 
   useLayoutEffect(() => {

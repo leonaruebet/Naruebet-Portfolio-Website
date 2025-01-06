@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { experienceData, type Experience } from './data'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import { FaDownload } from 'react-icons/fa'
 
 export function Experience() {
   const [selectedId, setSelectedId] = useState<string | null>(null)

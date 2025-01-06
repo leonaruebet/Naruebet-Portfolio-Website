@@ -1,18 +1,22 @@
+import { IconType } from 'react-icons'
+
 export interface SkillDetail {
   name: string
   tools: string[]
   description: string
-  icon?: any
+  icon?: IconType
+}
+
+export interface SubCategory {
+  name: string
+  icon: IconType
+  details: SkillDetail[]
 }
 
 export interface SkillCategory {
   id: string
   title: string
-  icon: any
+  icon: IconType
   color: string
-  subCategories: {
-    name: string
-    icon: any
-    details: SkillDetail[]
-  }[]
+  subCategories: SubCategory[]
 } 
