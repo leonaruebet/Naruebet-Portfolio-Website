@@ -32,7 +32,7 @@ const companies = [
   {
     name: 'Square Thick',
     logo: '/squarethick.png',
-    href: '#',
+    href: 'https://line.me/S/shop/sticker/author/1691042',
     role: 'Founder',
     description: 'Line Sticker Collection',
     year: '2021'
