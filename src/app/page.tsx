@@ -5,6 +5,7 @@ import { Awards } from '@/components/sections/awards'
 import { TechStack } from '@/components/sections/tech-stack'
 import Image from 'next/image'
 import { Founded } from '@/components/sections/founded'
+import { Roles } from '@/components/sections/roles'
 
 export default function Home() {
   return (
@@ -68,6 +69,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Roles />
         <Founded />
         <TechStack />
         <Experience />
