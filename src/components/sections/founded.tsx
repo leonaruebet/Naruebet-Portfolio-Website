@@ -28,6 +28,14 @@ const companies = [
     role: 'Co-Founder',
     description: 'Dynamic 3D Printing driven by Social Listening',
     year: '2022'
+  },
+  {
+    name: 'Square Thick',
+    logo: '/squarethick.png',
+    href: '#',
+    role: 'Founder',
+    description: 'Line Sticker Collection',
+    year: '2021'
   }
 ]
 
@@ -36,7 +44,7 @@ export function Founded() {
     <section className="py-6">
       <div className="container mx-auto px-4">
         <SectionHeader
-          title="founded"
+          title="founded.businesses"
           subtitle="Companies I've Founded & Co-Founded"
         />
         
@@ -44,7 +52,7 @@ export function Founded() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto items-stretch"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 max-w-6xl mx-auto items-stretch"
         >
           {companies.map((company, index) => (
             <motion.div

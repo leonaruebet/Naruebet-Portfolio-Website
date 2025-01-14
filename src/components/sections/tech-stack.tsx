@@ -112,14 +112,14 @@ export function TechStack() {
           </motion.p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 sm:gap-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2 sm:gap-3">
             {techStack.map((tech, index) => {
               const Icon = tech.icon
               return (
                 <motion.div
                   key={tech.name}
-                  className="group relative p-3 rounded-lg bg-[#1a1a1a] border border-[#73D25D]/20 hover:border-[#73D25D]/40 transition-all duration-500"
+                  className="group relative p-2 rounded-lg bg-[#1a1a1a] border border-[#73D25D]/20 hover:border-[#73D25D]/40 transition-all duration-500"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
