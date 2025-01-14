@@ -26,7 +26,7 @@ const companies = [
     logo: '/starters.png',
     href: 'https://www.startersofficial.com/',
     role: 'Co-Founder',
-    description: 'Dynamic 3D Printing driven by Social Listening',
+    description: 'Tech Driven Solution',
     year: '2022'
   },
   {
