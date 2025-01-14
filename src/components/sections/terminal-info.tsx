@@ -128,13 +128,24 @@ function TerminalContent() {
       </div>
 
       {/* Terminal Text Content */}
-      <div className="flex-grow overflow-y-auto">
-        <div className="max-w-full break-words">
-          {renderContent()}
+      <div className="flex-grow overflow-y-auto w-full">
+        <div className="w-full px-2">
+          <div className="font-bold text-[#73D25D] mb-2 break-words">
+            {displayText.split('\n')[0]}
+          </div>
+          <div 
+            className="text-white/90 text-sm sm:text-base"
+            style={{ 
+              wordWrap: 'break-word',
+              wordBreak: 'break-word',
+              whiteSpace: 'pre-wrap',
+              maxWidth: '100%'
+            }}
+          >
+            {displayText.split('\n').slice(1).join('\n')}
+          </div>
           {showPrompt && (
-            <span 
-              className="ml-1 inline-block h-4 w-2 bg-primary-solid animate-pulse"
-            />
+            <span className="ml-1 inline-block h-4 w-2 bg-primary-solid animate-pulse" />
           )}
         </div>
       </div>
@@ -182,7 +193,7 @@ export function TerminalInfo() {
   }, [])
 
   return (
-    <div className="relative h-full w-full p-4 sm:p-6 font-mono text-sm">
+    <div className="relative h-full w-full p-2 sm:p-4 md:p-6 font-mono text-sm">
       {/* Terminal Header */}
       <div className="mb-2 flex items-center gap-2">
         <div className="h-3 w-3 rounded-full bg-[#ff5f56]" />
@@ -191,9 +202,11 @@ export function TerminalInfo() {
         <span className="ml-2 text-xs text-white opacity-50">personal.summary</span>
       </div>
 
-      <AnimatePresence mode="wait">
-        {mounted && <TerminalContent />}
-      </AnimatePresence>
+      <div className="w-full overflow-hidden" style={{ maxWidth: 'calc(100vw - 2rem)' }}>
+        <AnimatePresence mode="wait">
+          {mounted && <TerminalContent />}
+        </AnimatePresence>
+      </div>
     </div>
   )
 } 

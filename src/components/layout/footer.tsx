@@ -2,8 +2,7 @@ import Link from 'next/link'
 
 const navigation = {
   main: [
-    { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
+    { name: 'Home', href: '/' }
   ],
   social: [
     { name: 'Facebook', href: 'https://www.facebook.com/leoebet', icon: 'fab fa-facebook' },

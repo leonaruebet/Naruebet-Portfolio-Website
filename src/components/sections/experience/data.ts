@@ -6,6 +6,7 @@ import {
   FaLightbulb,
   FaLeaf
 } from 'react-icons/fa'
+import { SiNextdotjs } from 'react-icons/si'
 
 export interface Experience {
   id: string
@@ -21,6 +22,25 @@ export interface Experience {
 }
 
 export const experienceData: Experience[] = [
+  {
+    id: 'ireadcustomer',
+    role: 'Founder',
+    company: 'iReadCustomer',
+    companyDesc: 'AI-driven Customer Behavior Analytics Platform',
+    duration: 'Jul 2024 - Present',
+    icon: SiNextdotjs,
+    color: '#000000',
+    logo: '/ireadcustomer.webp',
+    achievements: [
+      'Founded iReadCustomer, an AI-driven platform leveraging Culture 3.0 frameworks for advanced customer behavior analytics.',
+      'Trained multi-agent AI systems, automating key pipeline processes like data collection, analysis, and reporting.',
+      'Designed and developed the platform architecture, integrating full-stack technologies (Next.js, MongoDB, Tailwind CSS) with secure Google Authentication.',
+      'Created scalable data architectures and models, enabling robust analytics pipelines and actionable business insights.',
+      'Applied system thinking methodologies, crafting a cohesive and adaptive platform ecosystem.',
+      'Developed comprehensive marketing strategies and compelling pitch decks, successfully securing 1.5 million THB funding from TEDFund.'
+    ],
+    technologies: ['AI/ML', 'Next.js', 'MongoDB', 'Tailwind CSS', 'Google Auth', 'System Design']
+  },
   {
     id: 'station',
     role: 'Co-Founder & COO',

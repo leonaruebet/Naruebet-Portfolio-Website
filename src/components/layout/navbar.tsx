@@ -5,8 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 const links = [
-  { href: '/', label: 'Home' },
-  { href: '/projects', label: 'Projects' },
+  { href: '/', label: 'Home' }
 ]
 
 export function Navbar() {
