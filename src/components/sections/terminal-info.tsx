@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export function TerminalInfo() {
   const [displayText, setDisplayText] = useState('')
-  const [showPrompt, setShowPrompt] = useState(true)
+  const [showPrompt] = useState(true)
 
   useEffect(() => {
     const text = `Hi there! I'm Leo Naruebet, a passionate Data Scientist and Business Developer based in Bangkok, Thailand. I specialize in leveraging AI and data analytics to drive business innovation and growth.`
